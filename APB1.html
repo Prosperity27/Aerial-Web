@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./APB.css">
+    <title>Aerial Pvt. Bots</title>
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <div class="logo">
+                    <img src="data:image/jpeg;base64,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" alt="logo">
+                </div>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="rightnav">
+                <input type="text" name="search" id="search">
+                <button class="button btn btn-sm">Search</button>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <div class="background">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQixxFnDyt21mUAKr6DRuVrRNzPbZweKmQ3Yg&s" alt="background">
+            <p class="overlay">"Unlock new dimensions of efficiency and creativity with drones designed for the modern world."</p>
+        </div>
+        <hr>
+        <section class="Home">
+            <h1>Home</h1>
+            <hr>
+            <h2>Drone Specialization</h2>
+            
+            <div class="special">
+                <img src="data:image/jpeg;base64,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" alt="drone">
+                <p><b>Overview:</b> Detailed explanation of what drone specialization entails, highlighting your company's expertise and experience.<br>
+                <b>Technological Advancements: </b>Discuss advancements in drone technology that your company utilizes.<br>
+                <b>Applications: </b>Explore various applications of drones in industries such as agriculture, construction, surveillance, and more.<br>
+                </p>
+            </div>
+        </section>
+        <hr>
+        <section class="about">
+           
+            <h1>About Us</h1>
+        <hr>    
+            <div class="about-section">
+                <h2>Who We Are</h2>
+                <p>We are Aerial Pvt. Bots, a leading company in drone technology, committed to innovation and excellence in providing drone-based solutions across various industries.</p>
+            </div>
+            <div class="about-section">
+                <h2>Our Vision</h2>
+                <p>Our vision is to revolutionize the way industries operate by integrating advanced drone technologies, creating a safer and more efficient world.</p>
+            </div>
+            <div class="about-section">
+                <h2>Our Mission</h2>
+                <p>Our mission is to deliver cutting-edge drone solutions that meet the unique needs of our clients, driving progress and sustainability through innovation.</p>
+            </div>
+            <div class="about-section">
+                <h2>Our Values</h2>
+                <p>We value innovation, integrity, and customer satisfaction. We are dedicated to continuous improvement and excellence in all that we do.</p>
+            </div>
+            <div class="about-section">
+                <h2>Why Choose Our Services</h2>
+                <p>Our services are built on a foundation of expertise, advanced technology, and a commitment to meeting the specific needs of our clients. We provide reliable, efficient, and cost-effective drone solutions.</p>
+            </div>
+            <div class="meet-founder">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLuL3PE6ETxGj2g0dkBg9wAaPh6PqlVNGpJw&s" alt="Founder">
+                <div>
+                    <h2>Meet the Founder</h2>
+                    <p>Anshul, our founder, is a visionary leader with over 20 years of experience in the technology and aviation industries. His passion for innovation drives our company forward.</p>
+                </div>
+            </div>
+            <div class="career-section">
+                <h2>Drone Careers</h2>
+                <p>Join our team and be part of the drone technology revolution. We offer exciting career opportunities in various fields, including engineering, software development, and operations. Visit our careers page for more information.</p>
+                <a href="/careers">Explore Careers</a>
+            </div>
+        </section>
+        <hr>
+        <section class="products">
+            <h1>Products</h1>
+        <hr>
+            <h2>Featured Products</h2>
+            <div class="product-item">
+                <h3>Quadcopter</h3>
+                <img src="data:image/jpeg;base64,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" alt="Quadcopter">
+                <p>$7.80</p>
+                <a href="#quadcopter">View details</a>
+            </div>
+        </section>
+        <hr>
+        <section class="services">
+            <h1>Services</h1>
+        <hr>
+            <h2 id="services">Our Drone Services</h2>
+            <ul>
+                <li>Drone Surveillance</li>
+                <li>Aerial Mapping and Surveying</li>
+                <li>Drone Photography and Videography</li>
+                <li>Industrial Inspections</li>
+                <li>Delivery Drones</li>
+            </ul>
+        </section>
+        <!--<section class="testimonials">
+            <h1>Customer Testimonials</h1>
+            <div class="testimonial">
+                <blockquote>
+                    "Using Aerial Pvt. Bots' drones revolutionized our agriculture practices. Highly recommended!"
+                </blockquote>
+                <p>- John Doe, Farmer</p>
+            </div>
+            <div class="testimonial">
+                <blockquote>
+                    "The surveillance drones provided by Aerial Pvt. Bots are reliable and effective for our security needs."
+                </blockquote>
+                <p>- Jane Smith, Security Manager</p>
+            </div>
+        </section>-->
+        <hr>
+        <section class="virtual-tour">
+            <h1>Virtual Tour</h1>
+        <hr>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+        </section>
+        <hr>
+        <section class="social-media">
+            <h1>Follow Us</h1>
+            <hr>
+            <a href="https://www.facebook.com/aerialpvtbots" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a><br>
+            <a href="https://www.instagram.com/aerialpvtbots" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a><br>
+            <a href="https://www.youtube.com/aerialpvtbots" target="_blank"><img src="youtube-icon.png" alt="YouTube"></a><br>
+        </section>
+        <hr>
+        <section class="blog">
+            <h1>Latest News</h1>
+            <hr>
+            <div class="blog-post">
+                <h3>Advancements in Drone Surveillance Technology</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero nec tellus ullamcorper sollicitudin.</p>
+                <a href="/blog/advancements-in-drone-surveillance">Read more</a>
+            </div>
+            <div class="blog-post">
+                <h3>Using Drones for Precision Agriculture</h3>
+                <p>Suspendisse potenti. Donec feugiat libero vel elit rutrum, vel fringilla quam elementum.</p>
+                <a href="/blog/using-drones-for-agriculture">Read more</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            
+                <div class="contact-info">
+                    <hr><h2>Contact Information</h2><hr>
+                    <p><strong>Address:</strong> 123 Drone Avenue, City, Country</p>
+                    <p><strong>Phone:</strong> +1 234 567 890</p>
+                    <p><strong>Email:</strong> info@aerialpvtbots.com</p>
+                </div>
+                <div class="newsletter">
+                    <hr><h2>Subscribe to Our Newsletter</h2><hr>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <button type="submit" class="button">Subscribe</button>
+                    </form>
+                </div>
+              
+        </div>
+        <div class="footer-bottom">
+            Copyright &copy; 2024 Aerial Private Limited | All Rights Reserved
+        </div>
+    </footer>
+    
+
+<script>
+// Smooth scrolling for anchor links
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollLinks = document.querySelectorAll('a[href^="#"]');
+    
+    for (const scrollLink of scrollLinks) {
+        scrollLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                const offsetTop = targetElement.offsetTop;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    }
+});
+// Form submission handling
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('form');
+    
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const emailInput = document.querySelector('input[type="email"]');
+        const enteredEmail = emailInput.value;
+        
+        console.log('Entered email:', enteredEmail);
+        
+        // You can add further logic here to process the form data or display a confirmation message
+    });
+});
+
+</script>
+</body>
+</html>

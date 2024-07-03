@@ -1,0 +1,272 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.rightnav {
+    display: flex;
+    align-items: center;
+}
+
+.rightnav input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.rightnav .button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+hr {
+    max-width: 100vw;
+    margin: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+
+.background{
+    position: relative;
+    text-align: center; /* Center aligns the text */
+}
+.background img{
+    opacity: 0.8 ;
+    width: 1000px;
+    height: auto;
+    padding-left: 55px;
+    margin: 15px;
+    z-index: -1;
+    vertical-align: middle;
+    
+}
+
+.overlay{
+    position: absolute;
+    top: 50%; /* Position at the vertical center */
+    left: 50%; /* Position at the horizontal center */
+    transform: translate(-50%, -50%); /* Centers the overlay */
+    text-align: center; /* Center aligns the text */
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    /*padding:auto;
+    padding-left: 25px; /* Padding around the text */
+    width: 100%; /* Width of the overlay */
+}
+
+
+.overlay p {
+    font-size: 1.2em; /* Example smaller font size */
+    
+}
+ /*#background p {
+        background: rgba(0, 0, 0, 0.5) url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQixxFnDyt21mUAKr6DRuVrRNzPbZweKmQ3Yg&s") cover;
+        width: 1000px;
+        height: auto;
+        padding: auto;
+        margin: 15px;
+        padding-left: 75px;
+        opacity: 0.5;
+    }
+
+
+/*.background p{
+    text-align: center;
+}*/
+h1{
+    text-align: center;
+    background-color: burlywood;
+}
+
+h2{
+    background-color: navajowhite;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.special{
+    display: flex;
+    justify-content: space-between;
+}
+.section {
+    margin-bottom: 40px;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.special img {
+    float: left;
+    margin-right: 20px;
+}
+
+.about-section, .meet-founder, .career-section {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    
+}
+
+.meet-founder img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.product-item img {
+    height: 150px;
+    width: auto;
+}
+
+.product-item p {
+    font-size: 18px;
+    color: #333;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+.virtual-tour iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+.services{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    
+}
+
+
+.social-media a img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.blog-post {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.blog-post h3 {
+    margin-top: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+}
+
+.footer-content div {
+    width: 45%;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.newsletter input[type="email"] {
+    width: 80%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.newsletter .button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
